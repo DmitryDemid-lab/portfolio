@@ -1,0 +1,23 @@
+.MainBlock {
+    background-color: #5f6789;
+    height: 100vh;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.welcomeText {
+    background-color: #b8b8b8;
+    text-align: left;
+}
+
+.myPhoto {
+    width: 300px;
+    height: 400px;
+    background-color: #b8b8b8;
+}
