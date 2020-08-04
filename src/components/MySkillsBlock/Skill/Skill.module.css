@@ -1,0 +1,17 @@
+.Skill {
+    width: 280px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillLogo {
+    width: 33.3%;
+}
+
+.skillTitle {
+}
+
+.skillDescription {
+}
