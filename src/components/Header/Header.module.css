@@ -1,0 +1,7 @@
+.Header {
+    background-color: #cbffa5;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 20%;
+    height: 60px;
+}
