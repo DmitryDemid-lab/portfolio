@@ -1,14 +1,15 @@
 .Skill {
-    width: 400px;
+    width: 300px;
     border: 1px solid black;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    margin: 20px 0;
 }
 
 .projectLogo {
-    width: 100%;
+    max-width: 100%;
 }
 
 .showBtn {

@@ -2,6 +2,12 @@
     background-color: #cbffa5;
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 20%;
     height: 60px;
+}
+
+@media (max-width: 768px) {
+    .Header {
+        align-items: center;
+        justify-content: center;
+    }
 }

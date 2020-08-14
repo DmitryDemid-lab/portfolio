@@ -3,6 +3,16 @@
     height: 100vh;
 }
 
+@media (max-width: 768px) {
+    .MainBlock {
+        height: fit-content;
+        padding: 50px 0;
+    }
+    .welcomeText, .myPhoto {
+        margin: 20px auto;
+    }
+}
+
 .mainContent {
     display: flex;
     align-items: center;

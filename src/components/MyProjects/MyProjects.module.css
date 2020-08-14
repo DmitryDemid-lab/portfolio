@@ -1,12 +1,13 @@
 .MyProjectsBlock {
     background-color: #aa8395;
-    height: 100vh;
+    padding: 50px 0;
 }
 
 .MyProjectsBlockContent {
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .Projects {
@@ -15,4 +16,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 1024px) {
+    .Projects {
+        flex-direction: column;
+    }
 }

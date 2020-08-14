@@ -1,6 +1,6 @@
 .Footer {
     background-color: #6af3b9;
-    height: 20vh;
+    padding: 50px 0;
 }
 
 .footerContent {
@@ -13,11 +13,18 @@
 .iconsBlock {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    width: 500px;
+    width: 70%;
     border: 1px solid black;
     margin-bottom: 20px;
+}
+
+@media (max-width: 425px) {
+    .iconsBlock {
+        width: 100%;
+    }
 }
 
 .icon {
