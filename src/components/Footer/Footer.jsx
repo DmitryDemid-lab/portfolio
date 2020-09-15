@@ -1,7 +1,9 @@
 import React from 'react';
 import s from './Footer.module.scss'
 import cs from '../common/styles/ContainerStyle/Container.module.css'
-import BlockHeader from "../common/BlockHeader/BlockHeader";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faFacebook, faGithub, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons'
+
 
 function Footer(props) {
     return (
@@ -12,10 +14,26 @@ function Footer(props) {
                         <h2>Dmitry Demid</h2>
                     </a>
                     <div className={s.iconsBlock}>
-                        <div className={s.icon}>1</div>
-                        <div className={s.icon}>2</div>
-                        <div className={s.icon}>3</div>
-                        <div className={s.icon}>4</div>
+                        <div className={s.refIcon}>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faFacebook} className={s.icon}/>
+                            </a>
+                        </div>
+                        <div className={s.refIcon}>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faLinkedin} className={s.icon}/>
+                            </a>
+                        </div>
+                        <div className={s.refIcon}>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faGithub} className={s.icon}/>
+                            </a>
+                        </div>
+                        <div className={s.refIcon}>
+                            <a href="#">
+                                <FontAwesomeIcon icon={faInstagram} className={s.icon}/>
+                            </a>
+                        </div>
                     </div>
                     <p className={s.copyright}>© 2020 beingeorge, All Rights Reserved.</p>
                 </div>

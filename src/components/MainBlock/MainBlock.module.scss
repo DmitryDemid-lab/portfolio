@@ -45,13 +45,44 @@
         margin: 20px auto;
       }
     }
-
-    .myPhoto {
-      width: 300px;
-      height: 400px;
-      background-color: #fff;
-      @media (max-width: 768px) {
-        margin: 20px auto;
+    .avatarModule{
+      transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      pointer-events: none;
+      position: relative;
+      display: table;
+      margin: 0 auto;
+      .myPhoto img {
+        transform: translate3d(8.5px, -19.7px, 0px);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        position: relative;
+        display: block;
+        left: 0px;
+        top: 0px;
+        max-height: 430px;
+        background-color: #fff;
+        @media (max-width: 768px) {
+          margin: 20px auto;
+        }
+      }
+      .avatarsBack {
+        transform: translate3d(-18.4px, -41.5px, 0px);
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        position: absolute;
+        display: block;
+        left: 0px;
+        top: 0px;
+        bottom: 0;
+        z-index: -9;
+        height: 110%;
+        width: 104%;
+        border: 5px solid #4e93e6;
+        right: 0;
+        margin-left: 8%;
+        margin-top: -8%;
       }
     }
   }

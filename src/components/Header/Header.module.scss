@@ -1,0 +1,12 @@
+@import "../common/styles/sass/variables";
+
+.Header {
+  background-color: $bgSecondColor;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 60px;
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
