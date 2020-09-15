@@ -1,4 +1,38 @@
-h1, h2, h3, h4, h5, h6, span, p {
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
+    font: 500 40px/1.2 'Josefin Sans', sans-serif;
+    letter-spacing: 5px;
+    color: #ffffff;
+}
+
+body, span, p {
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font: 400 11px/1.8 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0 0 30px;
+}
+
+h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0 0 5px;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration: none;
 }

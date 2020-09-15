@@ -1,0 +1,55 @@
+@import "../../common/styles/sass/variables";
+
+.Project {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 20px 0;
+  box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
+  background: $bgSecondColor;
+
+  .projectLogo {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: #000000;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+    }
+
+    .showBtn {
+      padding: 10px 20px;
+      background-color: #1f1f20bf;
+      color: $textColor;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 10%;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .descriptionInfo {
+    padding: 25px 20px;
+    text-align: start;
+
+    .projectTitle {
+      margin-bottom: 15px;
+    }
+
+    .projectDescription {
+    }
+  }
+}

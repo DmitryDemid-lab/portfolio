@@ -1,7 +1,6 @@
 .Container {
     max-width: 1200px;
     height: 100%;
-    border: 1px solid black;
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;

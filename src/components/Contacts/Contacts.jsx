@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import s from './Contacts.module.scss'
 import cs from '../common/styles/ContainerStyle/Container.module.css'
 import BlockHeader from "../common/BlockHeader/BlockHeader";
 
@@ -10,13 +10,17 @@ function Contacts(props) {
                 <div className={s.mainContent}>
                     <BlockHeader blockHeader={'Contacts'}/>
                     <form className={s.contactsForm}>
-                        <input type="text"/>
-                        <input type="text"/>
-                        <textarea/>
+                        <div className={s.formGroup}>
+                            <input type="text" placeholder={'Name'} name={'name'}  id={'name'} className={s.formControl}/>
+                        </div>
+                        <div className={s.formGroup}>
+                            <input type="text" placeholder={'E-mail'} name={'email'} className={s.formControl}/>
+                        </div>
+                        <div className={s.formGroup}>
+                            <textarea placeholder={'Your message'} className={s.formControl}/>
+                        </div>
+                        <button type='submit' className={s.customBtn}>Send Message</button>
                     </form>
-                    <div>
-                        <button>Send</button>
-                    </div>
                 </div>
             </div>
         </div>

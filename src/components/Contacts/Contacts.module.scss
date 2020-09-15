@@ -1,0 +1,59 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/button/customButton";
+
+.Contacts {
+  background-color: $bgFirstColor;
+  padding: 100px 0;
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contactsForm {
+      width: 540px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .formGroup {
+        margin-bottom: 1rem;
+        width: 100%;
+
+        .formControl {
+          background: $bgSecondColor !important;
+          border: 1px solid #4a4a4a;
+          font-size: 12px;
+          padding: 0 15px;
+          border-radius: 0;
+          display: block;
+          width: 100%;
+          height: calc(1.5em + .75rem + 2px);
+          font-weight: 400;
+          line-height: 1.5;
+          color: #495057;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          font-family: inherit;
+
+          &:active, &:hover, &:focus {
+            outline: 0;
+            outline-offset: 0;
+          }
+        }
+
+        textarea.formControl {
+          padding: 15px;
+          min-height: 100px;
+        }
+      }
+
+      .customBtn {
+      }
+
+      @media (max-width: 470px) {
+        width: 250px;
+      }
+    }
+  }
+}

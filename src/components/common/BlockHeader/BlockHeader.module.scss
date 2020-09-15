@@ -1,0 +1,20 @@
+@import "../styles/sass/variables";
+
+.BlockHeader {
+    visibility: visible;
+    animation-name: fadeInUp;
+    .title {
+        position: relative;
+        margin-bottom: 30px;
+        font-weight: 400;
+        color: $textColor;
+        text-transform: capitalize;
+        line-height: 1.2;
+    }
+    .moduleLine {
+        background: $primaryColor;
+        width: 55px;
+        height: 1px;
+        margin: 30px auto;
+    }
+}

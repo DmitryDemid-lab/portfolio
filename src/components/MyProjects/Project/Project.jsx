@@ -1,13 +1,16 @@
 import React from 'react';
-import s from './Project.module.css'
+import s from './Project.module.scss'
 
 function Project(props) {
     return (
-        <div className={s.Skill}>
-            <img src={props.logo} alt={props.projectTitle} className={s.projectLogo}/>
-            <button className={s.showBtn}>Show</button>
-            <h3 className={s.projecTitle}>{props.projectTitle}</h3>
-            <span className={s.projecDescription}>{props.projectDescription}</span>
+        <div className={s.Project}>
+            <div className={s.projectLogo} style={props.style}>
+                <a className={s.showBtn}>Show</a>
+            </div>
+            <div className={s.descriptionInfo}>
+                <h3 className={s.projectTitle}>{props.projectTitle}</h3>
+                <span className={s.projectDescription}>{props.projectDescription}</span>
+            </div>
         </div>
     )
 };

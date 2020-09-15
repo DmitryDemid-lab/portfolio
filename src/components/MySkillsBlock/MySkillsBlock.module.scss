@@ -1,0 +1,28 @@
+@import "../common/styles/sass/variables";
+
+.MySkillsBlock {
+  background-color: $bgSecondColor;
+  padding: 100px 0;
+
+  .MySkillsBlockContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .Skills {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 660px) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+
+
+
+

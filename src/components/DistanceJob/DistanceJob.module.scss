@@ -1,0 +1,15 @@
+@import "../common/styles/sass/variables";
+@import "../common/styles/button/customButton";
+
+.MainBlock {
+  background-color: $bgSecondColor;
+  padding: 100px 0;
+
+  .mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .customBtn{}
+  }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './DistanceJob.module.css'
+import s from './DistanceJob.module.scss'
 import cs from '../common/styles/ContainerStyle/Container.module.css'
 import BlockHeader from "../common/BlockHeader/BlockHeader";
 
@@ -8,10 +8,8 @@ function DistanceJob(props) {
         <div className={s.MainBlock}>
             <div className={cs.Container}>
                 <div className={s.mainContent}>
-                    <div className={s.contentText}>
-                        <BlockHeader blockHeader={'I Am Available For Distance Job'}/>
-                    </div>
-                    <button className={s.hireBtn}>HIRE ME</button>
+                    <BlockHeader blockHeader={'I Am Available For Distance Job'}/>
+                    <a className={s.customBtn} href={'#'}>HIRE ME</a>
                 </div>
             </div>
         </div>

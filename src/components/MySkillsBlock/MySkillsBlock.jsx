@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './MySkillsBlock.module.css'
+import s from './MySkillsBlock.module.scss'
 import cs from '../common/styles/ContainerStyle/Container.module.css'
-import reactLogo from '../../Images/skills/reactLogo.png'
+import reactLogo from '../../assets/images/skills/reactLogo.png'
 import Skill from "./Skill/Skill";
 import BlockHeader from "../common/BlockHeader/BlockHeader";
 

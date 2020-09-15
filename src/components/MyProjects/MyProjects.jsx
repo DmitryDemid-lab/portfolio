@@ -1,12 +1,18 @@
 import React from 'react';
-import s from './MyProjects.module.css'
+import s from './MyProjects.module.scss'
 import cs from '../common/styles/ContainerStyle/Container.module.css'
-import BlockHeader from "../common/BlockHeader/BlockHeader";
-import Project from "./Project/Project";
-import todoLogo from '../../Images/projects/to-do-list-app.png'
-import socialNetwork from '../../Images/projects/socialNetwork.png'
+import BlockHeader from '../common/BlockHeader/BlockHeader';
+import Project from './Project/Project';
+import todoLogo from '../../assets/images/projects/to-do-list-app.png'
+import socialNetworkLogo from '../../assets/images/projects/socialNetwork.png'
 
 function MyProjects(props) {
+    const socialNetworkBG = {
+        backgroundImage: `url(${socialNetworkLogo})`,
+    }
+    const todolistBG = {
+        backgroundImage: `url(${todoLogo})`,
+    }
 
     const todoDescription = 'ToDoList is smart task list for everyday use.\n' +
         'It is truly usable with great user experience.\n' +
@@ -20,8 +26,8 @@ function MyProjects(props) {
                 <div className={s.MyProjectsBlockContent}>
                     <BlockHeader blockHeader={'My projects'}/>
                     <div className={s.Projects}>
-                        <Project logo={todoLogo} projectTitle={'ToDoList'} projectDescription={todoDescription}/>
-                        <Project logo={socialNetwork} projectTitle={'Social Network'} projectDescription={todoDescription}/>
+                        <Project style={todolistBG} projectTitle={'ToDoList'} projectDescription={todoDescription}/>
+                        <Project style={socialNetworkBG} projectTitle={'Social Network'} projectDescription={todoDescription}/>
                     </div>
                 </div>
             </div>
