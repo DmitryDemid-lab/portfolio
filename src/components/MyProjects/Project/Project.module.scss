@@ -34,10 +34,45 @@
       background-color: #1f1f20bf;
       color: $textColor;
       font-size: 20px;
-      cursor: pointer;
       border-radius: 10%;
       position: relative;
       z-index: 1;
+      text-decoration:none;
+      -webkit-transition:0.3s all ease;
+      transition:0.3s ease all;
+      cursor: pointer;
+      &:before {
+        -webkit-transition:0.5s all ease;
+        transition:0.5s all ease;
+        position:absolute;
+        top:0;
+        left:50%;
+        right:50%;
+        bottom:0;
+        opacity:0;
+        content:'';
+        background-color:$primaryColor;
+        z-index:-2;
+        border-radius: 10%;
+      }
+      &:hover {
+        &:before {
+          -webkit-transition:0.5s all ease;
+          transition:0.5s all ease;
+          left:0;
+          right:0;
+          opacity:1;
+        }
+      }
+      &:focus {
+        &:before {
+          transition:0.5s all ease;
+          left:0;
+          right:0;
+          opacity:1;
+        }
+      }
+    }
     }
   }
 
@@ -52,4 +87,9 @@
     .projectDescription {
     }
   }
-}
+  @media (max-width: 1200px) {
+    width: 450px;
+  }
+  @media (max-width: 990px) {
+    width: 330px;
+  }

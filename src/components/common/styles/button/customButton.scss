@@ -19,12 +19,13 @@
   width: 100%;
   border: none;
   position: relative;
-  &:hover, &:focus {
+
+  &:hover, &:focus, &:active {
     -webkit-box-shadow: none;
     box-shadow: none;
-}
-
-
+    outline: 0;
+    outline-offset: 0;
+  }
 
   &::after {
     content: "";

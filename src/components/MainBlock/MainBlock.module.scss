@@ -12,6 +12,7 @@
     height: 100%;
 
     .welcomeText {
+      width: 60%;
       text-align: left;
       span {
         font-size: 16px;
@@ -42,7 +43,7 @@
         font-size: 27px;
       }
       @media (max-width: 768px) {
-        margin: 20px auto;
+        margin: 0 auto 20px;
       }
     }
     .avatarModule{
@@ -53,8 +54,9 @@
       position: relative;
       display: table;
       margin: 0 auto;
+      width: 40%;
       .myPhoto img {
-        transform: translate3d(8.5px, -19.7px, 0px);
+        transform: translate3d(-16.5px, 0.7px, 0px);
         transform-style: preserve-3d;
         backface-visibility: hidden;
         position: relative;
@@ -63,12 +65,9 @@
         top: 0px;
         max-height: 430px;
         background-color: #fff;
-        @media (max-width: 768px) {
-          margin: 20px auto;
-        }
       }
       .avatarsBack {
-        transform: translate3d(-18.4px, -41.5px, 0px);
+        transform: translate3d(-33.1px, 1.3px, 0px);
         transform-style: preserve-3d;
         backface-visibility: hidden;
         position: absolute;
@@ -84,11 +83,20 @@
         margin-left: 8%;
         margin-top: -8%;
       }
+      @media (max-width: 768px) {
+        margin: 20px auto 0;
+        min-width: 250px;
+        }
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
     }
   }
 
   @media (max-width: 768px) {
-    height: fit-content;
-    padding: 50px 0;
+    height: auto;
+    padding: 100px 0;
   }
 }
