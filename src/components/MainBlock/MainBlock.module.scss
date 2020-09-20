@@ -101,6 +101,9 @@
         margin-left: 8%;
         margin-top: -8%;
         z-index: 0;
+        @media (max-width: 1171px) {
+          width: 106%;
+        }
       }
 
       @media (max-width: 768px) {
