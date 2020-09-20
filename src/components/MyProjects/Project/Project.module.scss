@@ -8,6 +8,7 @@
   margin: 20px 0;
   box-shadow: -6px 10px 40px rgba(0, 0, 0, 0.06);
   background: $bgSecondColor;
+  height: 100%;
 
   .projectLogo {
     position: relative;
@@ -83,6 +84,7 @@
     }
 
     .projectDescription {
+      white-space: pre-line;
     }
   }
   @media (max-width: 1200px) {

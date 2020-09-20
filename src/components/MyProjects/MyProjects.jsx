@@ -15,9 +15,9 @@ function MyProjects(props) {
         backgroundImage: `url(${todoLogo})`,
     }
 
-    const todoDescription = 'ToDoList is smart task list for everyday use. It is truly usable with great user experience. No matter who you are and what you do - you will be better organized! STACK: ReactJS/Redux/TS/REST(Axios)/TDD/Jest/Css/MaterialUI/Formic'
+    const todoDescription = 'TodoList is smart task list for everyday use. It is truly usable with great user experience. No matter who you are and what you do - you will be better organized! \n ' + 'STACK: ReactJs, Redux, TS, REST (axios), TDD, Jest, Css, MaterialUI, Formic'
 
-    const socialNetworkDescription = 'A big project with aim to improve my skills with using stack: ReactJS/Redux/ReduxForm/TS/Css/Jest/TDD/REST(Axios)'
+    const socialNetworkDescription = 'A big project with aim to improve my skills. \n' + 'STACK: ReactJS, Redux, ReduxForm, TS, Css, Jest, TDD, REST (axios)'
 
     return (
         <div className={s.MyProjectsBlock} id={'myProjects'}>
