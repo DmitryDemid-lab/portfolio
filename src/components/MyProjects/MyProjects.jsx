@@ -5,6 +5,7 @@ import BlockHeader from '../common/BlockHeader/BlockHeader';
 import Project from './Project/Project';
 import todoLogo from '../../assets/images/projects/to-do-list-app.png'
 import socialNetworkLogo from '../../assets/images/projects/socialNetwork.png'
+import Fade from "react-reveal/Fade";
 
 function MyProjects(props) {
     const socialNetworkBG = {
@@ -14,23 +15,24 @@ function MyProjects(props) {
         backgroundImage: `url(${todoLogo})`,
     }
 
-    const todoDescription = 'ToDoList is smart task list for everyday use.\n' +
-        'It is truly usable with great user experience.\n' +
-        'No matter who you are and what you do - you will be better organized!\n' +
-        'At home, at work and in your free time - you will focus on really important things!\n' +
-        'SplenDO is powerful in its simplicity and convenience of use.'
+    const todoDescription = 'ToDoList is smart task list for everyday use. It is truly usable with great user experience. No matter who you are and what you do - you will be better organized! STACK: ReactJS/Redux/TS/REST(Axios)/TDD/Jest/Css/MaterialUI/Formic'
+
+    const socialNetworkDescription = 'A big project with aim to improve my skills with using stack: ReactJS/Redux/ReduxForm/TS/Css/Jest/TDD/REST(Axios)'
 
     return (
-        <div className={s.MyProjectsBlock}>
-            <div className={cs.Container}>
-                <div className={s.MyProjectsBlockContent}>
-                    <BlockHeader blockHeader={'My projects'}/>
-                    <div className={s.Projects}>
-                        <Project style={todolistBG} projectTitle={'ToDoList'} projectDescription={todoDescription}/>
-                        <Project style={socialNetworkBG} projectTitle={'Social Network'} projectDescription={todoDescription}/>
+        <div className={s.MyProjectsBlock} id={'myProjects'}>
+            <Fade bottom cascade>
+                <div className={cs.Container}>
+                    <div className={s.MyProjectsBlockContent}>
+                        <BlockHeader blockHeader={'My projects'}/>
+                        <div className={s.Projects}>
+                            <Project style={todolistBG} projectTitle={'ToDoList'} projectDescription={todoDescription}/>
+                            <Project style={socialNetworkBG} projectTitle={'Social Network'}
+                                     projectDescription={socialNetworkDescription}/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </Fade>
         </div>
     )
 };
