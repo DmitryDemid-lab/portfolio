@@ -26,9 +26,14 @@ function MyProjects(props) {
                     <div className={s.MyProjectsBlockContent}>
                         <BlockHeader blockHeader={'My projects'}/>
                         <div className={s.Projects}>
-                            <Project style={todolistBG} projectTitle={'ToDoList'} projectDescription={todoDescription}/>
+                            <Project style={todolistBG} projectTitle={'ToDoList'}
+                                     projectDescription={todoDescription}
+                                     projectUrl={'https://dmitrydemid-lab.github.io/todolist-ts/#/'}
+                            />
                             <Project style={socialNetworkBG} projectTitle={'Social Network'}
-                                     projectDescription={socialNetworkDescription}/>
+                                     projectDescription={socialNetworkDescription}
+                                     projectUrl={'https://dmitrydemid-lab.github.io/Social_Network/#/'}
+                            />
                         </div>
                     </div>
                 </div>
