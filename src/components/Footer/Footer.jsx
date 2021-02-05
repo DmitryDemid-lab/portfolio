@@ -24,7 +24,7 @@ function Footer(props) {
                                 </a>
                             </div>
                             <div className={s.refIcon}>
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/dmitry-demid/">
                                     <FontAwesomeIcon icon={faLinkedin} className={s.icon}/>
                                 </a>
                             </div>
@@ -40,7 +40,7 @@ function Footer(props) {
                             </div>
                         </div>
                         </Slide>
-                        <p className={s.copyright}>© 2020 DmitryDemid, All Rights Reserved.</p>
+                        <p className={s.copyright}>© 2021 Dmitry Demid, All Rights Reserved.</p>
                     </div>
                 </div>
             </Fade>
