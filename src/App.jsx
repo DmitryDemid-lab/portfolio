@@ -4,9 +4,9 @@ import Header from "./components/Header/Header";
 import MainBlock from "./components/MainBlock/MainBlock";
 import MySkillsBlock from "./components/MySkillsBlock/MySkillsBlock";
 import MyProjects from "./components/MyProjects/MyProjects";
-import DistanceJob from "./components/DistanceJob/DistanceJob";
 import Contacts from "./components/Contacts/Contacts";
 import Footer from "./components/Footer/Footer";
+import Resume from "./components/Resume/Resume";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <MainBlock/>
       <MySkillsBlock/>
       <MyProjects/>
-      <DistanceJob/>
+      <Resume/>
       <Contacts/>
       <Footer/>
     </div>
