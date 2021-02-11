@@ -27,11 +27,11 @@ function MyProjects(props) {
 
     const socialNetworkDescription = 'A big project with aim to improve my skills. Features: Authorization (login, logout), uploading new user’s avatar. possibility of changing user information (by pen button) and status (by double clicking on the status). Also you can see all users in this social network (users tabpage in the menu), by clicking on any user you will see his profile and ability to add him into your friends list (follow) and deleting from friends list (unfollow)\n' + 'STACK: ReactJS, Redux, ReduxForm, TS, Css, Jest, TDD, REST (axios)'
 
-    const onlineStoreDescription = 'A small online store with such features as: Adding items to cart, deleting items from cart, increasing count of items in cart, calculating finally price. Also you are able to place your order (forming JSON with information about customer and items from his order)\n' +
+    const onlineStoreDescription = 'A small online store with such features as: Adding items to cart, deleting items from cart, increasing count of items in cart, calculating final price. Also you are able to place your order (forming JSON with information about customer and items from his order)\n' +
         'STACK: ReactJs, Redux Toolkit, TypeScript, Firebase, REST (axios), Formic, TDD, Jest, Storybook, MaterialUI, SASS\n'
 
-    const onlineTheatreDescription = 'A small online store with such features as: Adding items to cart, deleting items from cart, increasing count of items in cart, calculating finally price. Also you are able to place your order (forming JSON with information about customer and items from his order)\n' +
-        'STACK: ReactJs, Redux Toolkit, TypeScript, Firebase, REST (axios), Formic, TDD, Jest, Storybook, MaterialUI, SASS\n'
+    const onlineTheatreDescription = 'Online database of information related to films, TV shows including cast, production team, biographies, plot summaries, ratings, and reviews. Based on the "developers.themoviedb.org" API. Features: After refreshing the page you can see different movies on header poster, also you can watch trailers of movies by clicking on movies icons or click play on header. Movies are refreshed by API. \n' +
+    'STACK: ReactJs, Redux Toolkit, TypeScript, Firebase, REST (axios), MaterialUI, SASS, React-youtube, movie-trailer\n' + 'P.s. The app is in development\n'
 
     return (
         <div className={s.MyProjectsBlock} id={'myProjects'}>
